@@ -1,0 +1,22 @@
+# radians
+home_position:
+  - 0.541052
+  - -1.13446
+  - 1.97222
+  - -2.40855
+  - -1.5708
+  - -0.261799
+
+rtde_frequency: 10  # Hz RTDE communication frequency
+velocity: 0.05        # rad/s
+acceleration: 0.05    # rad/s²
+dt: 1.0              # control loop time step
+lookahead_time: 0.03  # lookahead time for servoj
+gain: 300.0          # servo gain
+
+selection_vector: [0, 0, 1, 1, 0, 0]
+# wrench: [0, 0, 10, 1.2, 0, 0]
+wrench: [0, 0, 10, 0.06, 0, 0]
+force_type: 2
+limits: [2, 2, 10, 0.01, 0.1, 0.1]
+
